@@ -1,0 +1,12 @@
+---
+- hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: Get hostname
+      shell: echo $HOSTNAME
+      register: result
+
+   - name: Print hostname
+     debug:
+       var: result.stdout
