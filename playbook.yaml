@@ -8,3 +8,4 @@
 
     - name: Print hostname
       debug: msg="{{ result.stdout }}"
+
