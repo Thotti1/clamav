@@ -7,5 +7,4 @@
       register: result
 
     - name: Print hostname
-      debug:
-       var: result.stdout
+      - debug: msg="{{ result.stdout }}"
