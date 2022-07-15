@@ -2,9 +2,12 @@
 - hosts: all
   become: true
   tasks:
-    - name: Get hostname
-      shell: echo $HOSTNAME
-      register: result
+    # - name: Get hostname
+    #   shell: echo $HOSTNAME
+    #   register: result
 
-    - name: Print hostname
-      debug: msg="{{ result.stdout }}"
+    # - name: Print hostname
+    #   debug: msg="{{ result.stdout }}"
+      
+    - name: Run a script with arguments (free form)
+      script: remove_satellite_subscription_AI4_CentOS7.sh
