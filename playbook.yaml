@@ -9,5 +9,5 @@
      - name: Print hostname
        debug: msg="{{ result.stdout }}"
       
-    #- name: Run a script with arguments (free form)
-    #  script: clamav/remove_satellite_subscription_AI4_CentOS7.sh
+    - name: Run a script with arguments (free form)
+      script: /root/clamav/remove_satellite_subscription_AI4_CentOS7.sh
