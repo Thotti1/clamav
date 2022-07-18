@@ -1,6 +1,13 @@
 ---
 - hosts: all
   become: true
-  tasks:      
-    - name: Run a script with arguments (free form)
-      script: /var/lib/awx/projects/clamav/remove_satellite_subscription_AI4_CentOS7.sh
+  tasks:
+     - name: Get hostname
+       shell: echo $HOSTNAME
+       register: result
+
+     - name: Print hostname
+       debug: msg="{{ result.stdout }}"
+       
+    #- name: Run a script with arguments (free form)
+     # script: /var/lib/awx/projects/clamav/remove_satellite_subscription_AI4_CentOS7.sh
