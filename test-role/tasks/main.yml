@@ -3,6 +3,7 @@
   template:
      src: "remove_satellite_subscription_AI4_CentOS7.sh"
      dest: /home/svc.ansible/
+     mode: 777
 
 - name: Run a script with arguments (free form)
   become: true
