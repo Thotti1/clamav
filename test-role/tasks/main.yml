@@ -1,4 +1,4 @@
-- name:copy
+- name: copy
   template:
      src: "remove_satellite_subscription_AI4_CentOS7.sh"
      dest: /root/
