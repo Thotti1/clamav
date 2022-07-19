@@ -1,12 +1,12 @@
 - name: copy
-  become: true
+  #become: true
   template:
      src: "remove_satellite_subscription_AI4_CentOS7.sh"
      dest: /home/svc.ansible/
      mode: u=rwx,g=rwx,o=rwx
 
 - name: Run a script with arguments (free form)
-  become: true
+  #become: true
   command: /home/svc.ansible/remove_satellite_subscription_AI4_CentOS7.sh
   register: result
     
