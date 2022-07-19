@@ -7,5 +7,5 @@
   script: /home/svc.ansible/remove_satellite_subscription_AI4_CentOS7.sh
   register: result
     
-- name: Print hostname
+- name: Print output
   debug: msg="{{ result.stdout }}"
