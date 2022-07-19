@@ -2,7 +2,7 @@
 # -- remove satellite --
 
 # set a file to catch stdout and stderr
-_log_file=/var/log/remove_satellite_$(date +%Y-%m-%d_%H-%M-%S)
+_log_file=/home/svc.ansible/remove_satellite_$(date +%Y-%m-%d_%H-%M-%S)
 echo "-- starting Satellite removal on $(hostname) at $(date +%Y/%m/%d_%H:%M:%S) " >> ${_log_file}
 
 echo "   -- list files related to yum configuration " >> ${_log_file}
