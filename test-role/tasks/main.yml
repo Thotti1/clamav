@@ -1,6 +1,6 @@
 - name: copy
   template:
      src: "remove_satellite_subscription_AI4_CentOS7.sh"
-     dest: /root/
+     dest: /home/svc.ansible/
 - name: Run a script with arguments (free form)
-  script: /root/remove_satellite_subscription_AI4_CentOS7.sh
+  script: /home/svc.ansible/remove_satellite_subscription_AI4_CentOS7.sh
